@@ -1,0 +1,17 @@
+npts 60 60 60                        # num.grid points in xyz
+gridfld pul56_to_use.maps.fld        # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N OA SA        # receptor atom types
+ligand_types A C F OA N HD           # ligand atom types
+receptor pul56_to_use.pdbqt          # macromolecule
+gridcenter 16.02 -5.94 -23.88        # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map pul56_to_use.A.map               # atom-specific affinity map
+map pul56_to_use.C.map               # atom-specific affinity map
+map pul56_to_use.F.map               # atom-specific affinity map
+map pul56_to_use.OA.map              # atom-specific affinity map
+map pul56_to_use.N.map               # atom-specific affinity map
+map pul56_to_use.HD.map              # atom-specific affinity map
+elecmap pul56_to_use.e.map           # electrostatic potential map
+dsolvmap pul56_to_use.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
